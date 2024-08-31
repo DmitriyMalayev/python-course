@@ -12,11 +12,12 @@ def another():
 
     def greeting(name):
         nonlocal color
+        print(color)
         color = "red"
         print(color)
-        print(name)
+        print(name)  #local priority 
 
-    greeting("Dave")
 
+    greeting("Davee")
 
 another()

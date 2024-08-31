@@ -1,8 +1,8 @@
 
 
 def add_one(num):
-
     if (num >= 9):
+        print(num)
         return num + 1
 
     total = num + 1

@@ -8,7 +8,7 @@ class RPS(Enum):
     PAPER = 2
     SCISSORS = 3
 
-
+ 
 playagain = True
 
 while playagain:

@@ -27,12 +27,20 @@ print(band.items())
 # verify a key exists
 print("guitar" in band)
 print("triangle" in band)
+print("")
+print("")
+print("")
 
 # Change values
+print("CHECK")
+print(band)
+print(band["vocals"])
+ 
 band["vocals"] = "Coverdale"
 band.update({"bass": "JPJ"})
-
 print(band)
+print("")
+print("")
 
 # Remove items
 print(band.pop("bass"))

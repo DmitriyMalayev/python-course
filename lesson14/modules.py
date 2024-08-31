@@ -15,7 +15,7 @@ print(pi)
 print(kansas.capital)
 kansas.randomfunfact()
 
-print(__name__)
-print(kansas.__name__)
+print(__name__) #__main__ because it's the module we're running  
+print(kansas.__name__)  #kansas (t1he imported module   )
 
 rock_paper_scissors()

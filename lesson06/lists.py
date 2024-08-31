@@ -1,71 +1,79 @@
-users = ['Dave', 'John', 'Sara']
+users = ["John", "Sara", "Dave"]
 
-data = ['Dave', 42, True]
+data = ["Dave", 42, True]
 
 emptylist = []
 
-print("Dave" in emptylist)
+# print("Dave" in emptylist)
 
-print(users[0])
-print(users[-2])
+# print(users[0])
+# print(users[-2])
 
-print(users.index('Sara'))
+# print(users.index('Sara'))
 
-print(users[0:2])
-print(users[1:])
-print(users[-3:-1])
+# print(users[0:2])
+# print(users[1:])
+# print(users[-3:-1])
 
-print(len(data))
+# print(len(data))
 
-users.append('Elsa')
-print(users)
-
-users += ['Jason']
-print(users)
-
-users.extend(['Robert', 'Jimmy'])
-print(users)
-
-# users.extend(data)
+# users.append('Elsa')
 # print(users)
 
-users.insert(0, 'Bob')
+# users += ['Jason']
+# print(users)
+
+
+# users.extend(['Robert', 'Jimmy'])
+# print(users)
+
+# # users.extend(data)
+# # print(users)
+
+# users.insert(0, 'Bob') #Added to beginning of the list
+# print(users)
+
+# users[2:2] = ['Eddie', 'Alex'] #Added not replaced anyone
+# print(users)
+
+# users[1:3] = ['Robert', 'JPJ']  #replaced two values
+# print(users)
+
+# users.remove('Bob')  #first user
+# print(users)
+
+# print(users.pop()) #last user. Returns user removed.
+# print(users)
+
+# del users[0]  #specify index
+# print(users)
+
+# # del data
+# print(data)  #error
+
+# data.clear() #empties list but list exists
+# print(data)
 print(users)
 
-users[2:2] = ['Eddie', 'Alex']
+users[1:2] = ["dave"]
 print(users)
-
-users[1:3] = ['Robert', 'JPJ']
-print(users)
-
-users.remove('Bob')
-print(users)
-
-print(users.pop())
-print(users)
-
-del users[0]
-print(users)
-
-# del data
-data.clear()
-print(data)
-
-users[1:2] = ['dave']
 users.sort()
 print(users)
 
 users.sort(key=str.lower)
 print(users)
 
-nums = [4, 42, 78, 1, 5]
+nums = [4, 40, 42, 78, 1, 5, 100]
+nums.sort()
+print(nums)
+
 nums.reverse()
 print(nums)
 
 # nums.sort(reverse=True)
 # print(nums)
 
-print(sorted(nums, reverse=True))
+print(sorted(nums, reverse=True))  # doesn't mutate
 print(nums)
 
 numscopy = nums.copy()
@@ -85,7 +93,7 @@ print(mylist)
 
 # Tuples
 
-mytuple = tuple(('Dave', 42, True))
+mytuple = tuple(("Dave", 42, True))
 
 anothertuple = (1, 4, 2, 8, 2, 2)
 
@@ -94,7 +102,8 @@ print(type(mytuple))
 print(type(anothertuple))
 
 newlist = list(mytuple)
-newlist.append('Neil')
+anotherTuple = list()
+anotherTuple.append("Neil")
 newtuple = tuple(newlist)
 print(newtuple)
 
@@ -103,4 +112,12 @@ print(one)
 print(two)
 print(hey)
 
-print(anothertuple.count(2))
+print(anothertuple.count(2))  # returns number of occurences
+
+
+# Lists and Tuples
+# Lists use [] and are mutable
+# Tuples use () and are immutable
+# They both are ordered, have indexing / slicing methods, and duplicate elements
+# Sets
+# Sets are not ordered, not index based, don't have duplicate elements

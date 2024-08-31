@@ -23,9 +23,9 @@ def multiple_items(*args):
 multiple_items("Dave", "John", "Sara")
 
 
-def mult_named_items(**kwargs):
+def mult_named_items(**kwargs):   #keyword arguments 
     print(kwargs)
     print(type(kwargs))
 
 
-mult_named_items(first="Dave", last="Gray")
+multiple_items(first="Dave", last="Gray")
